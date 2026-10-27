@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Portofolio Mahasiswa</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#skill">Skill</a>
+        <a href="#project">Project</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+    
+    <main>
+        <section id="home">
+            <img src="foto-profil.jpg" alt="Foto Profil Mahasiswa" width="150">
+            <p>Nama Lengkap: Muhamad Danil</p>
+            <p>NIM: 40425119</p>
+            <p>Program Studi: Bisnis Digital</p>
+        </section>
+
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+
+            <p>
+                Halo, perkenalkan nama saya Muhamad Danil.
+                Saya adalah mahasiswa Program Studi Bisnis Digital.
+                Saya tertarik mempelajari teknologi, bisnis, dan
+                pembuatan website. Saya ingin terus belajar dan
+                mengembangkan kemampuan saya di bidang digital.
+            </p>
+
+            <h3>Riwayat Pendidikan</h3>
+
+            <table border="1" cellpadding="8">
+                <tr>
+                    <th>No</th>
+                    <th>Jenjang Pendidikan</th>
+                    <th>Nama Sekolah</th>
+                    <th>Tahun</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>SD</td>
+                    <td>Nama SD</td>
+                    <td>2012-2018</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>SMP</td>
+                    <td>Nama SMP</td>
+                    <td>2018-2021</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>SMA/SMK</td>
+                    <td>Nama SMA/SMK</td>
+                    <td>2021-2024</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Perguruan Tinggi</td>
+                    <td>UIN K.H. Abdurrahman Wahid Pekalongan</td>
+                    <td>2025-Sekarang</td>
+                </tr>
+            </table>
+        </section>
+
+         <hr> 
+
+        <section id="skill">
+            <h2>Skill</h2>
+
+            <p>Berikut beberapa kemampuan yang sedang saya pelajari:</p>
+
+            <ul>
+                <li>Microsoft Word</li>
+                <li>Microsoft Excel</li>
+                <li>HTML Dasar</li>
+                <li>Desain Grafis Dasar</li>
+                <li>Digital Marketing</li>
+                <li>Instalasi dan konfigurasi software</li>
+                <li>Jaringan Komputer</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Bagian Project nanti direvisi -->
+        <section id="project">
+            <h2>Project Saya</h2>
+
+            <h3>Project 1: Website Profil Sederhana</h3>
+
+            <p>
+                Website sederhana yang dibuat untuk menampilkan
+                informasi diri menggunakan HTML.
+            </p>
+
+            <a href="https://example.com" target="_blank">
+                Lihat Project 1
+            </a>
+
+            <h3>Project 2: Desain Promosi Produk</h3>
+
+            <p>
+                Desain promosi produk yang dibuat untuk
+                memperkenalkan produk kepada calon pelanggan.
+            </p>
+
+            <a href="https://example.com" target="_blank">
+                Lihat Project 2
+            </a>
+        </section>
+
+     <hr> 
+
+        <section id="kontak">
+            <h2>Kontak Saya</h2>
+
+            <p>Silakan isi formulir berikut untuk menghubungi saya.</p>
+
+            <form id="contactForm">
+                <label for="nama">Nama:</label>
+                <br>
+                <input type="text" id="nama" name="nama" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="pesan">Pesan:</label>
+                <br>
+                <textarea id="pesan" name="pesan" rows="5" cols="30" required></textarea>
+                <br><br>
+
+                <button type="submit">Kirim</button>
+            </form>
+
+            <div id="boxHasil" class="hasil-kontak-box">
+                <h3>Data Formulir</h3>
+                <p><strong>Nama:</strong> <span id="tampilNama"></span></p>
+                <p><strong>Email:</strong> <span id="tampilEmail"></span></p>
+                <p><strong>Isi Pesan:</strong></p>
+                <p id="tampilPesan" class="pesan-text-output"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portofolio Mahasiswa</p>
+    </footer>
+</body>
+</html>

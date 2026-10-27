@@ -1,0 +1,210 @@
+body {
+    font-family: 'SF Pro Display';
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro; /* Abu-abu sangat muda khas estetika modern */
+    color: #1a2c4c; /* Biru Navy Tua untuk teks agar mudah dibaca */
+}
+
+/* ==========================================================================
+   HEADER (Bagian Atas)
+   ========================================================================== */
+header {
+    background-color: white; /* Putih bersih */
+    text-align: center;
+    padding: 30px 10px;
+    color: #1a2c4c; /* Biru Navy Tua */
+}
+
+header h1 {
+    margin: 0;
+    color: #1a2c4c;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ==========================================================================
+   NAVIGASI (Menu Link)
+   ========================================================================== */
+nav {
+    background-color: #1a2c4c; /* Biru Navy Utama Real Madrid */
+    text-align: center;
+    padding: 10px 0;
+    position: sticky; /* Menu tetap di atas saat di-scroll */
+    top: 0;
+}
+
+nav a {
+    color: white; /* Teks Putih */
+    text-decoration: none; /* Menghilangkan garis bawah link */
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: 0.3s; /* Efek halus saat pointer mendekat */
+}
+
+/* Efek ketika menu disentuh mouse (Hover) */
+nav a:hover {
+    color: #e5a93b; /* Berubah jadi warna Emas Real Madrid */
+    background-color: #122038; /* Biru agak lebih gelap */
+}
+
+/* ==========================================================================
+   MAIN & SECTION (Tata Letak Konten)
+   ========================================================================== */
+main {
+    max-width: 1100px; /* Membatasi lebar konten agar nyaman dibaca */
+    margin: 30px auto; /* Ketengah secara otomatis */
+    padding: 0 20px;
+}
+
+section {
+    background-color: #ffffff; /* Kotak Putih untuk konten */
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Sudut melengkung halus */
+    border-bottom: 5px solid #e5a93b; /* Garis aksen emas di sisi kiri */
+}
+
+h2, h3 {
+    color: #1a2c4c;
+    margin-top: 0;
+}
+
+hr {
+    height: 1px;
+    margin: 30px 0;
+}
+
+/* ==========================================================================
+   PROFIL & SKILL (Bagian Home)
+   ========================================================================== */
+#home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home img {
+    border-radius: 50%; /* Membuat foto profil menjadi bulat */
+    border: 4px solid #1a2c4c; /* Bingkai Biru Navy */
+    margin-bottom: 15px;
+}
+
+#home p {
+    margin: 5px 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* ==========================================================================
+   TABEL (Riwayat Pendidikan)
+   ========================================================================== */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Menghilangkan celah antar garis */
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid gray;
+}
+
+th {
+    background-color: #1a2c4c; /* Kepala tabel Biru Navy */
+    color: white;
+}
+
+/* ==========================================================================
+   TOMBOL & LINK PROJECT
+   ========================================================================== */
+#project a {
+    display: inline-block;
+    background-color: #1a2c4c;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+#project a:hover {
+    background-color: #e5a93b; /* Berubah Emas saat di-hover */
+    color: #1a2c4c; /* Teks berubah Navy */
+}
+
+/* ==========================================================================
+   FORMULIR KONTAK
+   ========================================================================== */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-sizing: border-box; /* Agar padding tidak merusak lebar */
+}
+
+/* Efek saat form diklik */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #1a2c4c;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #e5a93b; /* Tombol warna Emas Madrid */
+    color: #1a2c4c;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #1a2c4c; /* Berubah Navy saat di-hover */
+    color: white;
+}
+
+.hasil-kontak-box {
+    display: block; /* Menyembunyikan kotak saat web pertama dibuka */
+    margin-top: 25px;
+    padding: 20px;
+    border: 2px dashed #e5a93b;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.hasil-kontak-box h3 {
+    border-bottom: 2px solid #1a2c4c;
+    padding-bottom: 5px;
+}
+.pesan-text-output {
+    background-color: #f4f6f9;
+    padding: 10px;
+    border-radius: 4px;
+    color: #555;
+}
+
+footer {
+    background-color: #1a2c4c;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
