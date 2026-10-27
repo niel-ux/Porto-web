@@ -208,40 +208,28 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Tampilan untuk layar HP */
-@media screen and (max-width: 600px) {
-    main {
-        padding: 0 10px;
-        margin: 15px auto;
-    }
-
-    section {
-        padding: 20px 15px;
-    }
-
+@media screen and (max-width: 768px) {
     header h1 {
-        font-size: 1.6rem;
+        font-size: 1.8rem; /* Mengecilkan judul agar tidak terpotong di HP */
     }
 
     nav {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column; /* Menu navigasi berjejer vertikal di HP */
     }
 
     nav a {
-        padding: 10px;
+        padding: 12px 0;
+        width: 100%;
+        border-bottom: 1px solid #122038;
     }
 
-    table {
-        font-size: 12px;
+    main {
+        margin: 15px auto;
+        padding: 0 10px; /* Memperkecil jarak tepi agar konten lebih luas */
     }
 
-    th, td {
-        padding: 6px;
-    }
-
-    #home {
-        flex-direction: column;
+    section {
+        padding: 20px; /* Mengurangi padding dalam kotak di layar kecil */
     }
 }
