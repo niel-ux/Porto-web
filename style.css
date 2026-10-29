@@ -201,27 +201,52 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 1.8rem;
+    /* 1. Perkecil ukuran padding dan font header agar pas di layar HP */
+    header {
+        padding: 20px 10px;
     }
 
+    header h1 {
+        font-size: 1.5rem; /* Ukuran lebih proporsional untuk mobile */
+        letter-spacing: 1px;
+    }
+
+    /* 2. Perbaikan navigasi menu bertumpuk */
     nav {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        box-sizing: border-box; /* Memastikan padding tidak membuat menu overflow */
     }
 
     nav a {
-        padding: 12px 0;
+        display: block; /* Mengubah inline-block menjadi block agar rapi saat vertikal */
+        padding: 14px 0;
         width: 100%;
-        border-bottom: 1px solid #122038;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Garis pembatas tipis antar menu */
+    }
+    
+    /* Menghilangkan garis pembatas di menu paling bawah (Kontak) */
+    nav a:last-child {
+        border-bottom: none;
     }
 
+    /* 3. Penyesuaian konten utama agar tidak terlalu mepet */
     main {
         margin: 15px auto;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     section {
         padding: 20px;
     }
+
+    /* Bonus: Mengoptimalkan tampilan gambar profil di mobile agar tidak lonjong */
+    #home img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
 }
+
