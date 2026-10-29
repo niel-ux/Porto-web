@@ -2,13 +2,11 @@ body {
     font-family: 'SF Pro Display';
     margin: 0;
     padding: 0;
-    background-color: gainsboro; /* Abu-abu sangat muda khas estetika modern */
-    color: #1a2c4c; /* Biru Navy Tua untuk teks agar mudah dibaca */
+    background-color: gainsboro;
+    color: #1a2c4c;
 }
 
-/* ==========================================================================
-   HEADER (Bagian Atas)
-   ========================================================================== */
+/*HEADER*/
 header {
     background-color: white; /* Putih bersih */
     text-align: center;
@@ -24,47 +22,42 @@ header h1 {
     letter-spacing: 2px;
 }
 
-/* ==========================================================================
-   NAVIGASI (Menu Link)
-   ========================================================================== */
+/* NAVIGASI (Menu Link)*/
 nav {
-    background-color: #1a2c4c; /* Biru Navy Utama Real Madrid */
+    background-color: #1a2c4c; 
     text-align: center;
     padding: 10px 0;
-    position: sticky; /* Menu tetap di atas saat di-scroll */
+    position: sticky;
     top: 0;
 }
 
 nav a {
-    color: white; /* Teks Putih */
-    text-decoration: none; /* Menghilangkan garis bawah link */
+    color: white; 
+    text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
     display: inline-block;
-    transition: 0.3s; /* Efek halus saat pointer mendekat */
+    transition: 0.3s;
 }
 
-/* Efek ketika menu disentuh mouse (Hover) */
 nav a:hover {
-    color: #e5a93b; /* Berubah jadi warna Emas Real Madrid */
-    background-color: #122038; /* Biru agak lebih gelap */
+    color: #e5a93b;
+    background-color: #122038;
 }
 
-/* ==========================================================================
-   MAIN & SECTION (Tata Letak Konten)
-   ========================================================================== */
+/* MAIN & SECTION */
 main {
-    max-width: 1100px; /* Membatasi lebar konten agar nyaman dibaca */
-    margin: 30px auto; /* Ketengah secara otomatis */
+    max-width: 1100px; 
+    margin: 30px auto;
     padding: 0 20px;
 }
 
 section {
-    background-color: #ffffff; /* Kotak Putih untuk konten */
+    background-color: #ffffff;
     padding: 30px;
     margin-bottom: 20px;
-    border-radius: 8px; /* Sudut melengkung halus */
-    border-bottom: 5px solid #e5a93b; /* Garis aksen emas di sisi kiri */
+    border-radius: 8px;
+    border-bottom: 5px solid #e5a93b;
 }
 
 h2, h3 {
@@ -77,9 +70,7 @@ hr {
     margin: 30px 0;
 }
 
-/* ==========================================================================
-   PROFIL & SKILL (Bagian Home)
-   ========================================================================== */
+/* PROFIL & SKILL (Bagian Home) */
 #home {
     text-align: center;
     display: flex;
@@ -88,8 +79,8 @@ hr {
 }
 
 #home img {
-    border-radius: 50%; /* Membuat foto profil menjadi bulat */
-    border: 4px solid #1a2c4c; /* Bingkai Biru Navy */
+    border-radius: 50%;
+    border: 4px solid #1a2c4c; 
     margin-bottom: 15px;
 }
 
@@ -105,12 +96,14 @@ ul li {
     margin-bottom: 8px;
 }
 
-/* ==========================================================================
-   TABEL (Riwayat Pendidikan)
-   ========================================================================== */
+#tentang p {
+    text-align: justify;
+}
+
+/* TABEL */
 table {
     width: 100%;
-    border-collapse: collapse; /* Menghilangkan celah antar garis */
+    border-collapse: collapse;
     margin-top: 15px;
 }
 
@@ -121,13 +114,11 @@ th, td {
 }
 
 th {
-    background-color: #1a2c4c; /* Kepala tabel Biru Navy */
+    background-color: #1a2c4c;
     color: white;
 }
 
-/* ==========================================================================
-   TOMBOL & LINK PROJECT
-   ========================================================================== */
+/* TOMBOL & LINK PROJECT */
 #project a {
     display: inline-block;
     background-color: #1a2c4c;
@@ -141,29 +132,31 @@ th {
 }
 
 #project a:hover {
-    background-color: #e5a93b; /* Berubah Emas saat di-hover */
-    color: #1a2c4c; /* Teks berubah Navy */
+    background-color: #e5a93b;
+    color: #1a2c4c;
 }
 
-/* ==========================================================================
-   FORMULIR KONTAK
-   ========================================================================== */
+#project img {
+    border: 4px solid #1a2c4c; 
+    margin-bottom: 15px;
+}
+
+/* FORMULIR KONTAK */
 input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 4px;
-    box-sizing: border-box; /* Agar padding tidak merusak lebar */
+    box-sizing: border-box;
 }
 
-/* Efek saat form diklik */
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     border-color: #1a2c4c;
     outline: none;
 }
 
 button[type="submit"] {
-    background-color: #e5a93b; /* Tombol warna Emas Madrid */
+    background-color: #e5a93b;
     color: #1a2c4c;
     font-weight: bold;
     padding: 12px 24px;
@@ -176,16 +169,15 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #1a2c4c; /* Berubah Navy saat di-hover */
+    background-color: #1a2c4c;
     color: white;
 }
 
 .hasil-kontak-box {
-    display: block; /* Menyembunyikan kotak saat web pertama dibuka */
-    margin-top: 25px;
+    display: block;
     padding: 20px;
-    border: 2px dashed #e5a93b;
-    background-color: #ffffff;
+    border: 2px solid #e5a93b;
+    background-color: white;
     border-radius: 8px;
 }
 .hasil-kontak-box h3 {
@@ -210,12 +202,12 @@ footer {
 
 @media screen and (max-width: 768px) {
     header h1 {
-        font-size: 1.8rem; /* Mengecilkan judul agar tidak terpotong di HP */
+        font-size: 1.8rem;
     }
 
     nav {
         display: flex;
-        flex-direction: column; /* Menu navigasi berjejer vertikal di HP */
+        flex-direction: column;
     }
 
     nav a {
@@ -226,10 +218,10 @@ footer {
 
     main {
         margin: 15px auto;
-        padding: 0 10px; /* Memperkecil jarak tepi agar konten lebih luas */
+        padding: 0 10px;
     }
 
     section {
-        padding: 20px; /* Mengurangi padding dalam kotak di layar kecil */
+        padding: 20px;
     }
 }
